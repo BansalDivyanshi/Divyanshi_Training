@@ -13,7 +13,7 @@ def main():
 
     all_readings = sensor1.readings + sensor2.readings + sensor3.readings
 
-    write_to_csv(all_readings, "sensor_data.csv")
+    write_to_csv(all_readings, "all_sensor_data.csv")
 
     anomalies_sensor2 = sensor2.detect_anomaly()
     anomalies_sensor3 = sensor3.detect_anomaly()
